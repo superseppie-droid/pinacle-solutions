@@ -1,7 +1,7 @@
 :root {
-  --primary: #0D6EFD;
-  --accent: #F4B400;
-  --dark: #222;
+  --primary: #004080;
+  --accent: #FF6F00;
+  --dark: #333333;
   --light: #fff;
 }
 
@@ -15,6 +15,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: var(--dark);
   line-height: 1.6;
+  background: #fafafa;
 }
 
 /* Header */
@@ -25,22 +26,29 @@ header {
   text-align: center;
 }
 
-header svg {
-  display: block;
-  margin: 0 auto 1rem auto;
+.logo {
+  max-width: 180px;
+  margin-bottom: 1rem;
 }
 
 header p {
   margin-bottom: 1rem;
+  font-size: 1.1rem;
 }
 
 .btn {
   background: var(--accent);
-  color: var(--dark);
+  color: var(--light);
   padding: 0.75rem 1.5rem;
   text-decoration: none;
   border-radius: 5px;
-  font-weight: bold;
+  font-weight: 700;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #e65c00;
 }
 
 /* Secties */
@@ -48,12 +56,17 @@ section {
   padding: 3rem 1rem;
   max-width: 900px;
   margin: auto;
+  background: var(--light);
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
   color: var(--primary);
   margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 .services {
@@ -63,7 +76,7 @@ h2 {
 }
 
 .service {
-  background: #f9f9f9;
+  background: #f0f0f0;
   padding: 1.5rem;
   border-radius: 8px;
 }
@@ -74,11 +87,14 @@ form {
   gap: 1rem;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 0.75rem;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-family: inherit;
+  font-size: 1rem;
+  resize: vertical;
 }
 
 button {
@@ -88,7 +104,8 @@ button {
   padding: 0.75rem;
   cursor: pointer;
   border-radius: 5px;
-  font-weight: bold;
+  font-weight: 700;
+  transition: background 0.3s ease;
 }
 
 button:hover {
@@ -103,4 +120,5 @@ footer {
   background: var(--primary);
   color: var(--light);
   margin-top: 2rem;
+  font-size: 0.9rem;
 }
