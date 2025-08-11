@@ -109,8 +109,7 @@ button {
 }
 
 button:hover {
-  background: var(--accent);
-  color: var(--dark);
+  background: #003366; /* Darker shade of primary */
 }
 
 /* Footer */
